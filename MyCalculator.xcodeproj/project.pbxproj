@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD94B3D21F6A9C4A0054202D /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD94B3D11F6A9C4A0054202D /* CalculatorBrain.swift */; };
 		BDAE2E9A1F56E3CF006E51CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAE2E991F56E3CF006E51CA /* AppDelegate.swift */; };
-		BDAE2E9C1F56E3CF006E51CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAE2E9B1F56E3CF006E51CA /* ViewController.swift */; };
+		BDAE2E9C1F56E3CF006E51CA /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAE2E9B1F56E3CF006E51CA /* CalculatorViewController.swift */; };
 		BDAE2E9F1F56E3CF006E51CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDAE2E9D1F56E3CF006E51CA /* Main.storyboard */; };
 		BDAE2EA11F56E3CF006E51CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDAE2EA01F56E3CF006E51CA /* Assets.xcassets */; };
 		BDAE2EA41F56E3CF006E51CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDAE2EA21F56E3CF006E51CA /* LaunchScreen.storyboard */; };
@@ -34,9 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD94B3D11F6A9C4A0054202D /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 		BDAE2E961F56E3CF006E51CA /* MyCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDAE2E991F56E3CF006E51CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BDAE2E9B1F56E3CF006E51CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BDAE2E9B1F56E3CF006E51CA /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		BDAE2E9E1F56E3CF006E51CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BDAE2EA01F56E3CF006E51CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDAE2EA31F56E3CF006E51CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				BDAE2E991F56E3CF006E51CA /* AppDelegate.swift */,
-				BDAE2E9B1F56E3CF006E51CA /* ViewController.swift */,
+				BDAE2E9B1F56E3CF006E51CA /* CalculatorViewController.swift */,
+				BD94B3D11F6A9C4A0054202D /* CalculatorBrain.swift */,
 				BDAE2E9D1F56E3CF006E51CA /* Main.storyboard */,
 				BDAE2EA01F56E3CF006E51CA /* Assets.xcassets */,
 				BDAE2EA21F56E3CF006E51CA /* LaunchScreen.storyboard */,
@@ -262,7 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDAE2E9C1F56E3CF006E51CA /* ViewController.swift in Sources */,
+				BD94B3D21F6A9C4A0054202D /* CalculatorBrain.swift in Sources */,
+				BDAE2E9C1F56E3CF006E51CA /* CalculatorViewController.swift in Sources */,
 				BDAE2E9A1F56E3CF006E51CA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +520,7 @@
 				BDAE2EC01F56E3D0006E51CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BDAE2EC11F56E3D0006E51CA /* Build configuration list for PBXNativeTarget "MyCalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +529,7 @@
 				BDAE2EC31F56E3D0006E51CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BDAE2EC41F56E3D0006E51CA /* Build configuration list for PBXNativeTarget "MyCalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +538,7 @@
 				BDAE2EC61F56E3D0006E51CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
