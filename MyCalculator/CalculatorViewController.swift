@@ -26,8 +26,12 @@ class CalculatorViewController: UIViewController {
     }
     
     @IBAction func touchClear(_ sender: UIButton) {
-        brain.clear()
-        label.text = brain.result    
+        if sender.currentTitle == "AC" {
+            brain.allClear()
+        } else {
+            brain.clear()
+        }
+        label.text = brain.result
     }
     
     @IBAction func touchDelete(_ sender: UIButton) {
