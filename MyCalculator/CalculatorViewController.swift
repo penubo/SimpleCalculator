@@ -38,6 +38,15 @@ class CalculatorViewController: UIViewController {
         label.text = brain.labelDrop()
     }
     
+    @IBAction func touchDot(_ sender: UIButton) {
+        if label.text!.characters.contains(".") {
+            return
+        } else {
+            brain.changeTypingMode(to: true)
+            label.text = brain.labelAppend(of: sender.currentTitle!)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
