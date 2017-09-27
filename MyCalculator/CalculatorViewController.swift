@@ -15,6 +15,8 @@ class CalculatorViewController: UIViewController {
     
     @IBOutlet weak var label: UILabel!
     
+    @IBOutlet weak var display: UILabel!
+    
     @IBAction func touchDigit(_ sender: UIButton) {
         label.text = brain.labelAppend(of: sender.currentTitle!)
     }
@@ -23,6 +25,7 @@ class CalculatorViewController: UIViewController {
         brain.changeTypingMode(to: false)
         brain.performOperation(sender.currentTitle!)
         label.text = brain.result
+        display.text = brain.displayResult
     }
     
     @IBAction func touchClear(_ sender: UIButton) {
@@ -32,6 +35,7 @@ class CalculatorViewController: UIViewController {
             brain.clear()
         }
         label.text = brain.result
+        display.text = brain.displayResult
     }
     
     @IBAction func touchDelete(_ sender: UIButton) {
@@ -39,7 +43,7 @@ class CalculatorViewController: UIViewController {
     }
     
     @IBAction func touchDot(_ sender: UIButton) {
-        if label.text!.characters.contains(".") {
+        if label.text!.characters.contains(".") || brain.isUserInTheMiddleOfTyping() == false {
             return
         } else {
             brain.changeTypingMode(to: true)
